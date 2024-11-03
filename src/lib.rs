@@ -226,8 +226,8 @@ pub fn gameicon_try_get_accessory_kinds_hook(accessory_kinds: i32, _method_info:
         11 => "SkinColor.png",
         12 => "Voice.png",
         13 => "MaskColor.png",
-        14 => "Placeholder.png",
-        15 => "Placeholder.png",
+        14 => "Accessory2.png",
+        15 => "NoEngage.png",
         16 => "Placeholder.png",
         _=> "Placeholder.png",
     };
@@ -272,8 +272,8 @@ fn accessorydetail_hook(ctx: &mut InlineCtx) {
         11 => "MID_MENU_ACCESSORY_SHOP_PART_SKINCOLOR",
         12 => "MID_MENU_ACCESSORY_SHOP_PART_VOICE",
         13 => "MID_MENU_ACCESSORY_SHOP_PART_MASKCOLOR",
-        14 => "MID_MENU_ACCESSORY_SHOP_PART_PLACEHOLDER",
-        15 => "MID_MENU_ACCESSORY_SHOP_PART_PLACEHOLDER",
+        14 => "MID_MENU_ACCESSORY_SHOP_PART_ACCESSORY2",
+        15 => "MID_MENU_ACCESSORY_SHOP_PART_NOENGAGE",
         16 => "MID_MENU_ACCESSORY_SHOP_PART_PLACEHOLDER",
         _=> "MID_MENU_ACCESSORY_SHOP_PART_PLACEHOLDER",
     };
