@@ -338,7 +338,7 @@ pub fn main() {
         );
     }));
     
-    skyline::patching::Patch::in_text(0x027b5eb0).bytes(&[0x1F, 0x20, 0x03, 0xD5]).expect("Couldn’t patch that shit for some reasons");
+    skyline::patching::Patch::in_text(0x027b5eb0).bytes(&[0x1F, 0x20, 0x03, 0xD5]).expect("Couldnâ€™t patch that shit for some reasons");
 
     skyline::install_hooks!(
         accessorydata_on_build_hook,
@@ -355,19 +355,19 @@ pub fn main() {
     );
 
     //Patches the length of UnitAccessoryList in it's ctor function.
-    skyline::patching::Patch::in_text(0x01f61c00).bytes(&[0x01, 0x02, 0x80, 0x52]).expect("Couldn’t patch that shit for some reasons");
+    skyline::patching::Patch::in_text(0x01f61c00).bytes(&[0x01, 0x02, 0x80, 0x52]).expect("Couldnâ€™t patch that shit for some reasons");
     
-    skyline::patching::Patch::in_text(0x027b5d70).bytes(&[0xDF, 0x3E, 0x00, 0x71]).expect("Couldn’t patch that shit for some reasons");
-    skyline::patching::Patch::in_text(0x027b5d8c).bytes(&[0xDF, 0x42, 0x00, 0x71]).expect("Couldn’t patch that shit for some reasons");
+    skyline::patching::Patch::in_text(0x027b5d70).bytes(&[0xDF, 0x3E, 0x00, 0x71]).expect("Couldnâ€™t patch that shit for some reasons");
+    skyline::patching::Patch::in_text(0x027b5d8c).bytes(&[0xDF, 0x42, 0x00, 0x71]).expect("Couldnâ€™t patch that shit for some reasons");
 
 
     
 
-    //skyline::patching::Patch::in_text(0x027b5e7c).bytes(&[0xDF, 0x02, 0x00, 0x71]).expect("Couldn’t patch that shit for some reasons");
-    //skyline::patching::Patch::in_text(0x027b5e80).bytes(&[0x21, 0x01, 0x00, 0x54]).expect("Couldn’t patch that shit for some reasons");
+    //skyline::patching::Patch::in_text(0x027b5e7c).bytes(&[0xDF, 0x02, 0x00, 0x71]).expect("Couldnâ€™t patch that shit for some reasons");
+    //skyline::patching::Patch::in_text(0x027b5e80).bytes(&[0x21, 0x01, 0x00, 0x54]).expect("Couldnâ€™t patch that shit for some reasons");
 
     //Patch Get_Count
-    //skyline::patching::Patch::in_text(0x01f61b10).bytes(&[0xE0, 0x01, 0x80, 0x52]).expect("Couldn’t patch that shit for some reasons");
+    //skyline::patching::Patch::in_text(0x01f61b10).bytes(&[0xE0, 0x01, 0x80, 0x52]).expect("Couldnâ€™t patch that shit for some reasons");
 
-    //skyline::patching::Patch::in_text(0x027bffcc).bytes(&[0x1F, 0x20, 0x03, 0xD5]).expect("Couldn’t patch that shit for some reasons");
+    //skyline::patching::Patch::in_text(0x027bffcc).bytes(&[0x1F, 0x20, 0x03, 0xD5]).expect("Couldnâ€™t patch that shit for some reasons");
 }
