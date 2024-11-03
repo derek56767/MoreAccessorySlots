@@ -8,7 +8,7 @@ version = "0.1.0"
 dependencies = [
  "engage",
  "include_dir",
- "skyline 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "skyline 0.2.1 (git+https://github.com/ultimate-research/skyline-rs)",
  "unity",
 ]
 
@@ -212,15 +212,6 @@ dependencies = [
 
 [[package]]
 name = "nnsdk"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0f4537c7470ba25f406d42c8cbfe26f64099af4b613e715c6bcb3d25856896c"
-dependencies = [
- "libc-nnsdk 0.2.0",
-]
-
-[[package]]
-name = "nnsdk"
 version = "0.3.0"
 source = "git+https://github.com/ultimate-research/nnsdk-rs#602e621750b8754a15c63ca729f13482aa36dfc9"
 dependencies = [
@@ -264,29 +255,27 @@ dependencies = [
 [[package]]
 name = "skyline"
 version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9950fc129490cff3f4755aa523df16aeeb80130699abfc59cc7c6df8fc5802ad"
+source = "git+https://github.com/Raytwo/skyline-rs?branch=preview#3ce8983f65b649e58f20184bec176520846d4b2b"
 dependencies = [
  "libc-nnsdk 0.2.0",
- "nnsdk 0.2.0",
- "skyline_macro 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nnsdk",
+ "skyline_macro 0.2.0 (git+https://github.com/Raytwo/skyline-rs?branch=preview)",
 ]
 
 [[package]]
 name = "skyline"
 version = "0.2.1"
-source = "git+https://github.com/Raytwo/skyline-rs?branch=preview#3ce8983f65b649e58f20184bec176520846d4b2b"
+source = "git+https://github.com/ultimate-research/skyline-rs#ba4706a6faa1a705b37cc962826b0426d72bf604"
 dependencies = [
  "libc-nnsdk 0.2.0",
- "nnsdk 0.3.0",
- "skyline_macro 0.2.0 (git+https://github.com/Raytwo/skyline-rs?branch=preview)",
+ "nnsdk",
+ "skyline_macro 0.2.0 (git+https://github.com/ultimate-research/skyline-rs)",
 ]
 
 [[package]]
 name = "skyline_macro"
 version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9194b20ee17c1de2ed299cfd9b8b56160a35b5579b3273c416ab4e5c058844dc"
+source = "git+https://github.com/Raytwo/skyline-rs?branch=preview#3ce8983f65b649e58f20184bec176520846d4b2b"
 dependencies = [
  "lazy_static",
  "proc-macro2",
@@ -297,7 +286,7 @@ dependencies = [
 [[package]]
 name = "skyline_macro"
 version = "0.2.0"
-source = "git+https://github.com/Raytwo/skyline-rs?branch=preview#3ce8983f65b649e58f20184bec176520846d4b2b"
+source = "git+https://github.com/ultimate-research/skyline-rs#ba4706a6faa1a705b37cc962826b0426d72bf604"
 dependencies = [
  "lazy_static",
  "proc-macro2",

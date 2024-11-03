@@ -3,7 +3,7 @@ use std::cmp::Ordering;
 
 use unity::prelude::*;
 use unity::engine::Sprite;
-use unity::engine::FilterMode;
+use unity::engine::FilterMode; 
 use unity::engine::Texture2D;
 use unity::engine::ImageConversion;
 use unity::engine::Rect;
