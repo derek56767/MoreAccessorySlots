@@ -158,7 +158,7 @@ pub fn unitaccessorylist_is_exist_hook(this: &mut UnitAccessoryList, accessory: 
                 // Grab the AccessoryData at that index in the XML if it's present, and if it is, compare the AIDs.
                 // Return false if the index is out of bounds OR the AIDs don't match
                 accessories.get(curr_acc.index as usize).is_some_and(|item| {
-                    item.aid.get_string().unwrap() == accessory.aid.get_string().unwrap()
+                    item.aid.to_string() == accessory.aid.to_string()
                 })
             })
     })
